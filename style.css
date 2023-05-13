@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width:992px){
+    .nav-item {
+    line-height:80px;
+    }
+}   
+
+
+.back_nav{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
