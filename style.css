@@ -19,3 +19,52 @@ a{
 a:hover{
     color: black;
 }
+
+.back_header{
+    background: linear-gradient(to bottom, #000000b8, #242145);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.text_a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    background-color: none;
+}
+.text_a button[type="text"] {
+    background-color: #242145;
+    opacity: 95%;
+    transition: 0.5s;
+}
+.text_a button[type="text"]:hover {
+    transition: 1s;
+    filter: brightness(120%);
+    background-color: #ffffff;
+    color: black;
+}
+  
+
+.mid_header *{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mid_header p{
+  font-size: 26px;
+  width: 100%;
+  padding: 3rem;
+  color: white;
+}
+
+.container-fluid.mid_header {
+  background-color: #242145;
+  border-radius: 3rem;
+  margin: 6rem;
+}
+
+
+  
