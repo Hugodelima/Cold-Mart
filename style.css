@@ -121,8 +121,16 @@ a:hover{
 }
 
 .some_text *{
-  margin-top: 1rem;
+  margin-top: 4rem;
   
+}
+.some_text p{
+  width: 100%;
+  
+}
+.some_text button[type="text"]{
+  margin-top: 0rem;
+  font-size: 20px;
 }
 
 @media (max-width: 1206px) {
