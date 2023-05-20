@@ -183,6 +183,96 @@ a:hover{
   }
 }
 
+.mega-content{
+  width: 100%;
+}
+
+
+.mega-content a {
+    line-height: 2em;
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 55%;
+    transition: 0.5s;
+}
+
+.mega-content a:hover{
+  border-radius: 1rem;
+  background-color: crimson;
+}
+
+
+
+@media (max-width: 2640px) {
+  .mega-content a{
+    width: 30%;
+  }
+
+}
+
+@media (max-width: 1450px) {
+  .mega-content a{
+    width: 50%;
+  }
+
+}
+@media (max-width: 768px) {
+  .mega-content a{
+    width: 40%;
+  }
+
+}
+@media (max-width: 425px) {
+  .mega-content a{
+    width: 20%;
+  }
+
+}
+@media (max-width: 375px) {
+  .mega-content a{
+    width: 30%;
+  }
+
+}
+@media (max-width: 280px) {
+  .mega-content a{
+    width: 40%;
+  }
+
+}
+
+
+
+.dropdown-menu {
+  background: #201f22;
+}
+
+
+
+
+
+
+.mega-content h5 {
+    color: #fff;
+    font-weight: bold;
+}
+
+
+footer{
+  background-color: #242145;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
