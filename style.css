@@ -13,7 +13,10 @@
     color: white;
 }
 
-
+.img_simple img{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .back_nav{
     color: white;
 }
@@ -266,7 +269,17 @@ footer{
 
 
 
-
+.back_fack{
+  background-color: #201f22;
+}
+.back_fack *{
+  color: white;
+}
+.back_fack a:hover{
+  color: white;
+  border-radius: 2px;
+  border-bottom: 2px solid crimson;
+}
 
 
 
