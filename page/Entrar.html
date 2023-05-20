@@ -8,106 +8,288 @@
     <link rel="shortcut icon" href="./image/logo.png"
     type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <header>
 
-
-  <div class="container">
-    <div class="esquerdo">
-        <div class="texto">
-            ⬅️ Saas
-        </div>
-    </div>
-    <div class="direito">
-        <div class="texto">
-            Sass ➡️
-        </div>
-    </div>
-  </div>
+      <nav class="navbar navbar-expand-lg navbar-dark p-3 bg-dark" id="headerNav">
+        
+        <div class="container-fluid">
+          <a class="navbar-brand d-block d-lg-none" href="../index.html">
+            <img src="../image/logo.png" height="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
     
-                                                                
-      
-      
-
-    </main>
-    <footer class="small bg-light text-center">
-      <div class="container py-3 py-sm-5">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-3">
-            <h6>Quick links</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">What's new</a></li>
-              <li><a href="#">Featured Product</a></li>
-              <li><a href="#">News letter</a></li>
-              <li><a href="#">My account</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <h6>Information</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Membership</a></li>
-              <li><a href="#">Shipping &amp; returns</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Sitemap</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <h6>Follow us</h6>
-            <ul class="list-unstyled">
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">YouTube</a></li>
-            </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <address>
-              <strong>BIET Jhansi</strong><br />
-              Panchwati Hostel<br />
-              Jhansi, Uttar Pradesh<br />
-              <abbr title="Telephone">T:</abbr
-              ><a href="tel:+919876543210">(987) 654-3210</a><br />
-              <abbr title="Mail">M:</abbr
-              ><a href="mailto:info@domain.com">info@domain.com</a>
-            </address>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-9">
-            <ul class="list-inline">
-              <li class="list-inline-item">&copy; 2017 Web Company, Inc.</li>
-              <li class="list-inline-item">All rights reserved.</li>
-              <li class="list-inline-item">
-                <a href="#">Terms of use and privacy policy</a>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item position-static">
+                <a class="nav-link" aria-current="page" href="../index.html">Início</a>
               </li>
+              <li class="nav-item dropdown dropdown-mega position-static">
+                <a class="nav-link dropdown-toggle py-2 px-2" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cursos</a>
+                <div class="dropdown-menu shadow-lg col-lg-12 my-0">
+                    <div class="mega-content">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-4 col-lg-2 py-4">
+                                    <h5>Programação</h5>
+                                    <div class="list-group">
+                                        <a href="python.html">Python</a>
+                                        <a href="C_prog.html">C++</a>
+                                        <a href="Java.html">Java</a>
+                                        <a href="php.html">PHP</a>
+                                       
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-4">
+                                    <h5>Marketing</h5>
+                                    <div class="list-group">
+                                        <a href="marketing_digital.html">Marketing Digital</a>
+                                        <a href="Marketing_midias.html">Marketing de Mídias Sociais</a>
+                                        <a href="Analise_marketing.html">Análise de Dados em Marketing</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-2 py-4">
+                                    <h5>Design</h5>
+                                    <div class="list-group">
+                                        <a href="design_grafico.html">Design Gráfico</a>
+                                        <a href="design_interface.html">Design de Interface</a>
+                                        <a href="analise_design.html">Análise de Dados em Design</a>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </li>
+              
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link img_simple" href="../index.html">
+                  <img src="../image/logo3.png" height="50" width="auto"/>
+                </a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link" href="Assinatura.html">Assinatura</a>
+              </li>
+              
+              
+            
+            
+              
+              
+              
+              
+
+              
+           
+              
+                
+              
             </ul>
+
+            <ul class="navbar-nav">
+              <div class="btn-group dropstart">
+                <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://www.pluralsight.com/content/dam/ps-nav-assets/nav-profile-image.svg" height="50">
+                </button>
+              
+  
+                <ul class="dropdown-menu">
+                
+                  <li><a class="dropdown-item back_nav" href="Entrar.html">Entrar</a></li>
+                  <li><a class="dropdown-item back_nav" href="Cadastrar.html">Cadastrar</a></li>
+                  <li><a class="dropdown-item back_nav" href="#">Sair</a></li>
+                </ul>
+               
+
+              </div>
+            </ul>
+            
+            
+            
+
+          </nav>
+          
+          
+          
+          
+          
+          
+          
+          
+        
+        
+        
+        
+
+
+
+        
+        <div class="back_header">
+          <div class="container-fluid mid_header">
+            <p class="text-center">O Pluralsight capacita você a atualizar suas habilidades</p>
+            <p class="text-center">Desenvolva habilidades técnicas críticas. Reduza os tempos de ciclo. Crie equipes de tecnologia mais felizes e saudáveis. E transforme seus objetivos em ganhos. Tudo com Pluralsight.</p>
+            <a href="#" class="text_a">
+              <button type="text" class="btn btn-primary">Login</button>
+            </a>
+            <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2023-updates/homepage-hero-composite-image-only.png" class="img-fluid" alt="...">
+            <h2 class="text_top">Organizações que ajudamos:</h2>
+            <div class="text-center image_nav">
+              <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/organization-logos/dell-logo.webp">
+              <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/organization-logos/ge-logo.webp">
+              <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/organization-logos/fedex-logo.webp">
+              <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/organization-logos/ford-logo.webp">
+              
+            </div>
+          
           </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <div class="dropdown dropup p-0">
-              <button
-                type="button"
-                class="btn btn-secondary btn-sm dropdown-toggle"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Visit other sites:
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a href="#" class="dropdown-item">www.otherwebsite.com</a>
-                <a href="#" class="dropdown-item">www.newwebsite.com</a>
-                <a href="#" class="dropdown-item">www.oldwebsite.com</a>
+          
+        </div>
+        
+    </header>
+    <main>
+
+      <div class="text_h1">
+        <h1>Destaque da semana</h1>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <a href="#">
+                  <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/skills-badges-solid.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Super Mario Bros.</h5>
+                    <p class="card-text">Mario é um filme baseado na série de video games, Super Mario Bros, da Nintendo. Em Super Mario Bros. - O Filme, Mario (Chris Pratt) é um encanador qualquer no bairro de Brooklyn junto com seu irmão Luigi (Charlie Day). Um dia,..
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="#">
+                  <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/flow-dashboard-solid-2.webp" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">John Wick 4: Baba Yaga</h5>
+                    <p class="card-text">Com o preço por sua cabeça cada vez maior, o lendário assassino de aluguel John Wick leva sua luta contra o High Table global enquanto procura os jogadores mais poderosos do submundo, de Nova York a Paris, do Japão a Berlim.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="explnation">
+        <div class="some_text">
+          <h1>Por que Pluralsight?</h1>
+          <p>Quer você seja um indivíduo que deseja aprender Python para avançar em sua carreira ou uma equipe corporativa que deseja reduzir os tempos de ciclo, acelerar a integração ou fornecer às suas equipes as habilidades para realizar suas estratégias, removemos os desafios e os obstáculos que o atrasam. Estamos avançando na força de trabalho de tecnologia do mundo, e isso começa tornando seu trabalho mais eficiente e eficaz - e dando a você mais motivos para comemorar.</p>
+          <a href="#" class="text_a">
+            <button type="text" class="btn btn-primary">Login</button>
+          </a>
+        </div>
+        <div class="image_some_text">
+          <img src="https://www.pluralsight.com/content/dam/pluralsight2/homepage/2022-webp/pluralsight-puzzle-piece.webp">
+        </div>
+      </div>
+      <div class="container-fluid container-fluid-max-xl mt-0">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <div class="card card-topic">
+              <div class="card-body">
+                <h3 class="card-title">Título do Card</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque </p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-6 pr-0">
+                    <button class="btn btn-link btn-block">Tópicos</button>
+                  </div>
+                  <div class="col-6 pl-0">
+                    <button class="btn btn-link btn-block">Serviço</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <div class="card card-topic">
+              <div class="card-body">
+                <h3 class="card-title">Título do Card</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Egestas purus viverra accumsan in nisl nisi Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque </p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-6 pr-0">
+                    <button class="btn btn-link btn-block">Tópicos</button>
+                  </div>
+                  <div class="col-6 pl-0">
+                    <button class="btn btn-link btn-block">Serviço</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      
+      
+     
+                                                                          
+      
+      
+
+    </main>
+    
+    
+    <footer class="back_fack text-center">
+      <div class="container py-3 py-sm-5">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-6 col-md-4">
+            <h6>Informações</h6>
+            <ul class="list-unstyled">
+              <li><a href="Sobre nos.html">Sobre nós</a></li>
+              <li><a href="Suporte.html">Suporte</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <h6>Links rápidos</h6>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="Novidades.html">Novidades</a></li>
+              <li><a href="Assinatura.html">Assinatura</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <h6>Siga-nos</h6>
+            <ul class="list-unstyled">
+              <li><a href="https://www.facebook.com/">Facebook</a></li>
+              <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+              <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-preto text-branco py-3">
+        <div class="container text-center">
+          <p class="mb-0"><a href="Termos de uso e politica.html">Termos de uso e política de privacidade.</a></p>
+          <p class="mb-0">2023 Todos os direitos reservados.</p>
+        </div>
+      </div>
     </footer>
+    
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     
