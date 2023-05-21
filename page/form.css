@@ -34,6 +34,14 @@ body, html {
   .esquerdo{
     display: none;
   }
+  .form_direito {
+    font-size: 10px;
+  }
+  .pass_esq{
+    font-size: 5px;
+  }
+
+
 }
 
 
@@ -47,4 +55,11 @@ body, html {
 
 .pass_esq{
   font-size: 15px;
+}
+
+
+.img_simple img{
+  background-color: crimson;
+  height: 5rem;
+  border-radius: 1rem;
 }
