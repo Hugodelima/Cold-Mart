@@ -186,12 +186,12 @@ a:hover{
   }
 }
 
-.mega-content{
+.backgrond-bacl{
   width: 100%;
 }
 
 
-.mega-content a {
+.backgrond-bacl a {
     line-height: 2em;
     color: #fff;
     text-decoration: none;
@@ -201,7 +201,7 @@ a:hover{
     transition: 0.5s;
 }
 
-.mega-content a:hover{
+.backgrond-bacl a:hover{
   border-radius: 1rem;
   background-color: crimson;
 }
@@ -209,44 +209,46 @@ a:hover{
 
 
 @media (max-width: 2640px) {
-  .mega-content a{
+  .backgrond-bacl a{
     width: 30%;
   }
 
 }
 
 @media (max-width: 1450px) {
-  .mega-content a{
+  .backgrond-bacl a{
     width: 50%;
   }
 
 }
 @media (max-width: 768px) {
-  .mega-content a{
+  .backgrond-bacl a{
     width: 40%;
   }
 
 }
 @media (max-width: 425px) {
-  .mega-content a{
+  .backgrond-bacl a{
     width: 20%;
   }
 
 }
 @media (max-width: 375px) {
-  .mega-content a{
+  .backgrond-bacl a{
     width: 30%;
   }
 
 }
 @media (max-width: 280px) {
-  .mega-content a{
+  .backgrond-bacl a{
     width: 40%;
   }
 
 }
 
-
+.hamburgr_text a{
+  font-size: 16px;
+}
 
 .dropdown-menu {
   background: #201f22;
@@ -257,7 +259,7 @@ a:hover{
 
 
 
-.mega-content h5 {
+.backgrond-bacl h5 {
     color: #fff;
     font-weight: bold;
 }
