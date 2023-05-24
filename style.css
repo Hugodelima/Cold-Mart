@@ -328,7 +328,10 @@ footer{
 }
 
 
-
+.valor stroke{
+  color: #205AFA;
+  font-size: 17.9px;
+}
 
 
 
