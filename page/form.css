@@ -45,11 +45,21 @@ body, html {
 }
 
 
+
 .form_direito {
   width: 50%;
   max-width: 400px;
   margin: auto;
   font-size: 20px;
+}
+
+
+@media (max-width:524px){
+  .container1 *{
+    font-size: 10px;
+  }
+
+
 }
 
 
