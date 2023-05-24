@@ -7,7 +7,7 @@
     <title>Cold Mart</title>
     <link rel="shortcut icon" href="./image/logo.png"
     type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -23,54 +23,27 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguerbrabo" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
     
           <div class="collapse navbar-collapse" id="hamburguerbrabo">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item position-static">
                 <a class="nav-link" aria-current="page" href="../index.html">Início</a>
               </li>
-              <li class="nav-item dropdown position-static">
-                <a class="nav-link dropdown-toggle py-2 px-2" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Cursos</a>
-                <div class="dropdown-menu shadow-lg col-lg-12 my-0">
-                    <div class="backgrond-bacl">
-                        <div class="container-fluid">
-                            <div class="row justify-content-center">
-                                <div class="col-12 col-md-4 col-lg-2 py-4">
-                                    <h5>Programação</h5>
-                                    <div class="list-group">
-                                        <a href="python.html">Python</a>
-                                        <a href="C_prog.html">C++</a>
-                                        <a href="Java.html">Java</a>
-                                        <a href="php.html">PHP</a>
-                                       
-                                        
-                                        
-                                        
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-2 py-4">
-                                    <h5>Marketing</h5>
-                                    <div class="list-group">
-                                        <a href="marketing_digital.html">Marketing Digital</a>
-                                        <a href="Marketing_midias.html">Marketing de Mídias Sociais</a>
-                                        <a href="Analise_marketing.html">Análise de Dados em Marketing</a>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 col-lg-2 py-4">
-                                    <h5>Design</h5>
-                                    <div class="list-group">
-                                        <a href="design_grafico.html">Design Gráfico</a>
-                                        <a href="design_interface.html">Design de Interface</a>
-                                        <a href="analise_design.html">Análise de Dados em Design</a>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu color_white">
+                  <li><a class="dropdown-item" href="python.html">Python</a></li>
+                  <li><a class="dropdown-item" href="C_prog.html">C++</a></li>
+                  <li><a class="dropdown-item" href="Java.html">Java</a></li>
+                  <li><a class="dropdown-item" href="php.html">PHP</a></li>
+                
+                </ul>
               </li>
+              
+              
               
               <li class="nav-item d-none d-lg-block">
                 <a class="nav-link img_simple" href="../index.html">
@@ -109,7 +82,7 @@
                 
                   <li><a class="dropdown-item back_nav" href="Entrar.html">Entrar</a></li>
                   <li><a class="dropdown-item back_nav" href="Cadastrar.html">Cadastrar</a></li>
-                  <li><a class="dropdown-item back_nav" href="#">Sair</a></li>
+                  <li><a class="dropdown-item back_nav" href="Entrar.html">Sair</a></li>
                 </ul>
                
 
@@ -119,7 +92,7 @@
             
             
 
-      </nav>
+          </nav>
           
           
           
@@ -141,259 +114,87 @@
         
     </header>
     <main>
-      <div class="text_h1">
-        <h1>Destaque da semana</h1>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso1.jpg" class="card-img-top" alt="Imagem do curso 1">
-              <div class="card-body">
-                <h5 class="card-title">Marketing Digital</h5>
-                <p class="card-text">Aprenda os fundamentos do marketing digital e descubra estratégias eficazes para promover seus negócios online.</p>
-                <p class="card-text">Valor: R$99,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso2.jpg" class="card-img-top" alt="Imagem do curso 2">
-              <div class="card-body">
-                <h5 class="card-title">Estratégias de SEO</h5>
-                <p class="card-text">Aprenda a otimizar seu site para os motores de busca e aumente sua visibilidade online com técnicas avançadas de SEO.</p>
-                <p class="card-text">Valor: R$149,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso3.jpg" class="card-img-top" alt="Imagem do curso 3">
-              <div class="card-body">
-                <h5 class="card-title">Redes Sociais para Negócios</h5>
-                <p class="card-text">Descubra como utilizar as redes sociais para fortalecer sua marca, atrair seguidores engajados e impulsionar suas vendas.</p>
-                <p class="card-text">Valor: R$79,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso4.jpg" class="card-img-top" alt="Imagem do curso 4">
-              <div class="card-body">
-                <h5 class="card-title">E-mail Marketing</h5>
-                <p class="card-text">Aprenda a criar campanhas de e-mail marketing eficientes para se comunicar com seu público-alvo e aumentar as taxas de conversão.</p>
-                <p class="card-text">Valor: R$199,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="text_h1">
-        <h1>Em promoção</h1>
+      <div class="text-center mt-4 mb-4">
+        <h1>Curso de Python</h1>
       </div>
       
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso5.jpg" class="card-img-top" alt="Imagem do curso 5">
-              <div class="card-body">
-                <h5 class="card-title">Estratégias de Marketing Digital</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Desconto: 30%</h6>
-                <p class="card-text">Descubra as melhores estratégias de marketing digital para impulsionar seu negócio online e aumentar sua presença na web.</p>
-                <p class="card-text">Valor: R$79,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
+        <div class="card bor_r">
+          <div class="card-body">
+            <img src="imagem_curso1.jpg" class="card-img-top">
+            <h1 class="text-center">100 Days of Code: The Complete Python Pro Bootcamp for 2023</h1>
+            <h4 class="text-center">Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!</h4>
+            <div class="stars text-center mb-4">
+              Avaliação: 
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span>
+              <span class="star">&#9734;</span>
+            </div>
+            <p class="text-center">Criado por<a class="link-opacity-100" href="#">Enzo</a></p>
+          </div>
+          
+          
+          
+          
+        </div>
+      <div class="container text-center">
+        <button class="btn btn-outline-info buton_white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Comprar</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Área de Compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            Compra adicionada no carrinho
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-4 mb-4">
+        <h1>Modulos do curso</h1>
+      </div>
+
+      <div class="container">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
             </div>
           </div>
-      
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso6.jpg" class="card-img-top" alt="Imagem do curso 6">
-              <div class="card-body">
-                <h5 class="card-title">Google Ads: Publicidade Online</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Desconto: 20%</h6>
-                <p class="card-text">Aprenda a criar campanhas eficazes no Google Ads e alcance seu público-alvo de forma direcionada.</p>
-                <p class="card-text">Valor: R$99,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
             </div>
           </div>
-      
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso10.jpg" class="card-img-top" alt="Imagem do curso 10">
-              <div class="card-body">
-                <h5 class="card-title">Google Analytics: Métricas e Análise de Dados</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Desconto: 25%</h6>
-                <p class="card-text">Aprenda a utilizar o Google Analytics para obter insights valiosos sobre o desempenho do seu site e otimizar suas estratégias de marketing.</p>
-                <p class="card-text">Valor: R$89,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
-            </div>
-          </div>
-      
-      
-          <div class="col-md-3">
-            <div class="card">
-              <img src="imagem_curso8.jpg" class="card-img-top" alt="Imagem do curso 8">
-              <div class="card-body">
-                <h5 class="card-title">Mídias Sociais para Negócios</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Desconto: 15%</h6>
-                <p class="card-text">Aprenda a utilizar as principais mídias sociais para impulsionar sua marca, alcançar seu público-alvo e aumentar sua visibilidade online.</p>
-                <p class="card-text">Valor: R$69,00</p>
-                <div class="stars">
-                  Avaliação: 
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <a href="#" class="btn btn-info">Saber mais</a>
-              </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
             </div>
           </div>
         </div>
+
+
       </div>
-
-
-
-      <div class="container mt-4">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2 class="text-center">O que nossos clientes dizem</h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="carousel-text text-center">
-                    <h5>
-                      Depoimento 1
-                      <img src="imagem_usuario1.jpg">
-                    </h5>
-                    <div class="stars mb-4">
-                      Avaliação: 
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9734;</span>
-                      <span class="star">&#9734;</span>
-                    </div>
-                    <p>"O curso de marketing digital na plataforma Cold Mart superou minhas expectativas! Os instrutores são extremamente qualificados e a didática utilizada é excelente. Os exemplos práticos são muito úteis para consolidar o aprendizado. Recomendo a todos que desejam aprender marketing digital de forma sólida e eficiente!"</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="carousel-text text-center">
-                    <h5>
-                      Depoimento 2
-                      <img src="imagem_usuario2.jpg">
-                    </h5>
-                    <div class="stars mb-4">
-                      Avaliação: 
-                      <span class="star">&#9734;</span>
-                      <span class="star">&#9734;</span>
-                      <span class="star">&#9734;</span>
-                      <span class="star">&#9734;</span>
-                      <span class="star">&#9734;</span>
-                    </div>
-                    <p>"Estou muito satisfeito com o curso de marketing digital na plataforma Cold Mart. Os materiais são bem organizados e de fácil compreensão. Além disso, o suporte oferecido pela equipe é excelente, sempre prontos para responder às minhas dúvidas. Recomendo a todos que desejam aprender marketing digital de forma prática e eficiente!"</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="carousel-text text-center">
-                    <h5>
-                      Depoimento 3
-                      <img src="imagem_usuario3.jpg">
-                    </h5>
-                    <div class="stars mb-4">
-                      Avaliação: 
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                      <span class="star">&#9733;</span>
-                    </div>
-                    <p>"Recomendo fortemente o curso de marketing digital na plataforma Cold Mart! Os tópicos são abordados de maneira clara e detalhada, o que facilita o aprendizado. Além disso, os exercícios práticos são desafiadores e estimulantes. Estou muito satisfeito com meu progresso e ansioso para continuar aprendendo!"</p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-              <button class="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="false"></span>
-                <span class="visually-hidden">Próximo</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+   
+      
       
       
       
@@ -446,7 +247,7 @@
     
     
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     
 </body>
 </html>
