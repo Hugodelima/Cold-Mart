@@ -85,10 +85,25 @@ a:hover{
 
 }
 .mid_header img {
-    width: 500%
+  width: 500%
 }
 
+@media (max-width:900px){
+  .mid_header p{
+    font-size: 26px;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+  }
+  .container-fluid.mid_header {
+    background-color: #242145;
+    border-radius: 3rem;
+    margin: 2rem;
+    
+  
+  }
 
+}
 
 .image_nav {
   display: flex;
@@ -404,4 +419,9 @@ footer{
 
 .estrela{
   color: rgb(206, 206, 0);
+}
+
+
+.botao{
+  font-size: 25px;
 }
