@@ -95,6 +95,7 @@ a:hover{
     padding: 1rem;
     color: white;
   }
+
   .container-fluid.mid_header {
     background-color: #242145;
     border-radius: 3rem;
@@ -104,6 +105,12 @@ a:hover{
   }
 
 }
+@media (max-width:700px){
+  .image_back{
+    display: none;
+  }
+}
+
 
 .image_nav {
   display: flex;
@@ -424,4 +431,8 @@ footer{
 
 .botao{
   font-size: 25px;
+}
+
+.text_left{
+  text-align: justify;
 }
