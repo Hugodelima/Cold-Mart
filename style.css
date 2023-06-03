@@ -324,7 +324,7 @@ footer{
 .back_fack a:hover{
   color: white;
   border-radius: 2px;
-  border-bottom: 2px solid crimson;
+  border-bottom: 2px solid #0dcaf0;
 }
 
 
@@ -448,3 +448,6 @@ footer{
 .text_left{
   text-align: justify;
 }
+
+
+

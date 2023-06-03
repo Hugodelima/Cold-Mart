@@ -11,7 +11,7 @@ body, html {
 }
 
 .esquerdo {
-  background-color: crimson;
+  background-color: #0dcaf0;
   flex: 1;
   order: 1;
 }
@@ -20,7 +20,7 @@ body, html {
 }
 
 .direito {
-  margin-top: 20rem;
+  margin-top: 15rem;
   background-color: rgb(255, 255, 255);
   flex: 1;
   order: 2;
@@ -103,7 +103,7 @@ body, html {
 
 
 .img_simple1 img{
-  background-color: crimson;
+  background-color: #0dcaf0;
   height: 5rem;
   border-radius: 1rem;
 }

@@ -14,13 +14,48 @@ email.addEventListener("input", function() { //oq o usuario digitar vai toda hor
 
 var senha = document.getElementById("senha");
 var senha1234 = document.getElementById("senha1234");
+var senha_boa = document.getElementById("senha_boa");
+var senha_pequena = document.getElementById("senha_pequena");
 
 senha.addEventListener("input", function() {
     if (senha.value === "1234") { 
         senha1234.style.display = "block";
-    } else {
+        senha_boa.style.display = "none";
+        senha_pequena.style.display = "none";
+    } else if (senha.value.length > 4){
+        senha_boa.style.display = "block";
         senha1234.style.display = "none";
+        senha_pequena.style.display = "none";
+    } else if (senha.value.length < 4){
+        senha_boa.style.display = "none";
+        senha1234.style.display = "none";
+        senha_pequena.style.display = "block";
+    } 
+    else {
+        senha1234.style.display = "none";
+        senha_boa.style.display = "none";
+        senha_pequena.style.display = "none";
     }
 });
+var repitirsenha = document.getElementById("repitirsenha");
+var senha_nao_igual = document.getElementById("senha_nao_igual");
+var senha_igual = document.getElementById("senha_igual");
+var repetirsenha_nao_igual = document.getElementById("repetirsenha_nao_igual");
+repitirsenha.addEventListener("input", function() {
+    if (senha.value === repitirsenha.value) { 
+        senha_igual.style.display = "block";
+        senha_nao_igual.style.display = "none";
+        repetirsenha_nao_igual.style.display = "none";
+            
+    } else {
+        senha_nao_igual.style.display = "block";
+        senha_igual.style.display = "none";
+        repetirsenha_nao_igual.style.display = "none";
+    }
+});
+
+
+
+
 
 
