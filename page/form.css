@@ -89,19 +89,20 @@ body, html {
 
 @media (max-width:524px){
   .container1 *{
-    font-size: 10px;
+    font-size: 15px;
   }
 
 
 }
 
 
-.pass_esq{
+.pass_esq a,label{
   font-size: 15px;
 }
 
 
-.img_simple img{
+
+.img_simple1 img{
   background-color: crimson;
   height: 5rem;
   border-radius: 1rem;
@@ -118,4 +119,13 @@ body, html {
   color: white;
   border-radius: 2px;
   border-bottom: 2px solid crimson;
+}
+
+.link{
+  color: rgb(7, 41, 181);
+  text-decoration:underline;
+}
+.link:hover{
+  color: rgb(7, 41, 181);
+  text-decoration:underline;
 }
