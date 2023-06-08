@@ -63,6 +63,13 @@ body, html {
   .pass_esq a{
     font-size: 17px;
   }
+  .direito {
+    margin-top: 0rem;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    order: 2;
+  }
+
   
 
 
