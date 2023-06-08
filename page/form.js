@@ -23,11 +23,11 @@ senha.addEventListener("input", function() {
         senha1234.style.display = "block";
         senha_boa.style.display = "none";
         senha_pequena.style.display = "none";
-    } else if (senha.value.length > 4){
+    } else if (senha.value.length >= 4){
         senha_boa.style.display = "block";
         senha1234.style.display = "none";
         senha_pequena.style.display = "none";
-    } else if (senha.value.length < 4){
+    } else if (senha.value.length <= 4){
         senha_boa.style.display = "none";
         senha1234.style.display = "none";
         senha_pequena.style.display = "block";

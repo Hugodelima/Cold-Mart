@@ -6,8 +6,7 @@ body, html {
 
 .container1 {
   display: flex;
-  height: 100%;
-
+  min-height: 100vh;
 }
 
 .esquerdo {
@@ -15,73 +14,69 @@ body, html {
   flex: 1;
   order: 1;
 }
-.logo{
+
+.logo {
   color: black;
 }
 
 .direito {
-  margin-top: 15rem;
   background-color: rgb(255, 255, 255);
   flex: 1;
   order: 2;
 }
-.esquerdo img{
+
+.esquerdo img {
   width: 100%;
   height: 50rem;
 }
-.texto_simples{
+
+.texto_simples {
   display: none;
 }
 
-@media (max-width:1324px){
-  .esquerdo{
+@media (max-width: 1324px) {
+  .esquerdo {
     display: none;
   }
+
   .form_direito {
     font-size: 7px;
   }
-  .pass_esq{
+
+  .pass_esq {
     font-size: 5px;
   }
-  .pass_esq a{
+
+  .pass_esq a {
     font-size: 10px;
   }
-  .texto_simples{
+
+  .texto_simples {
     display: flex;
   }
+
   .direito {
-    margin-top: 10rem;
     background-color: rgb(255, 255, 255);
     flex: 1;
     order: 2;
   }
-
-
 }
-@media (max-width:768px){
- 
-  .pass_esq a{
+
+@media (max-width: 768px) {
+  .pass_esq a {
     font-size: 17px;
   }
+
   .direito {
-    margin-top: 0rem;
+    margin: 0;
+    padding: 0;
     background-color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
     flex: 1;
     order: 2;
-
   }
-
-  
-  
 }
-
-  
-
-
-
-
-
-
 
 .form_direito {
   width: 50%;
@@ -90,49 +85,42 @@ body, html {
   font-size: 20px;
 }
 
-
-@media (max-width:524px){
-  .container1 *{
+@media (max-width: 524px) {
+  .container1 * {
     font-size: 13px;
   }
-  
-  
-
-
 }
 
-
-.pass_esq a,label{
+.pass_esq a,label {
   font-size: 15px;
 }
 
-
-
-.img_simple1 img{
+.img_simple1 img {
   background-color: #0dcaf0;
   height: 5rem;
   border-radius: 1rem;
 }
 
-
-.back_fack{
+.back_fack {
   background-color: #201f22;
 }
-.back_fack *{
+
+.back_fack * {
   color: white;
 }
-.back_fack a:hover{
+
+.back_fack a:hover {
   color: white;
   border-radius: 2px;
   border-bottom: 2px solid crimson;
 }
 
-.link{
+.link {
   color: rgb(7, 41, 181);
-  text-decoration:underline;
-
+  text-decoration: underline;
 }
-.link:hover{
+
+.link:hover {
   color: rgb(7, 41, 181);
-  text-decoration:underline;
+  text-decoration: underline;
 }
