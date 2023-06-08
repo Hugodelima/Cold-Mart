@@ -1,9 +1,10 @@
 var email = document.getElementById("email");
 var email_invalido = document.getElementById("email_nfunciona");
 var email_valido = document.getElementById("email_funciona");
+var re = /\S+@\S+\.\S+/; // é uam expressão de e-mailvalido, tirei desse site https://horadecodar.com.br/expressao-regular-para-validar-e-mail-javascript-regex/
 
 email.addEventListener("input", function() { //oq o usuario digitar vai toda hora chamar a função
-    if (email.checkValidity()) { // se o input que nesse caso é email for valido vai mostrar a mensagem valido
+    if (re.test(email.value)) { // se o input que nesse caso é email for valido vai mostrar a mensagem valido
         email_invalido.style.display = "none";
         email_valido.style.display = "block"; // aqui vai alterar o style para chamar a class do texto para aparecer
     } else {
@@ -53,6 +54,7 @@ repitirsenha.addEventListener("input", function() {
         repetirsenha_nao_igual.style.display = "none";
     }
 });
+
 
 
 

@@ -125,9 +125,16 @@
             <img src="../image/Black_White_Minimalist_Logo__2_-removebg-preview.png" height="50" width="auto">
             </a>
             <div class="m-1">
-                <label for="text">Digite seu nome completo</label>
-                <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
-            
+              <label for="text">Digite seu nome completo</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome completo" required>
+              <div id="nome_invalido" class="invalid-feedback">
+                Por favor, preencha seu nome de forma valida.
+                </div>
+              <div id="nome_valido" class="valid-feedback">
+                Parece bom
+              </div>
+              
+          
             </div>
             <div class="m-1">
                 <label for="email">Digite seu e-mail</label>
@@ -140,10 +147,20 @@
                 </div>
             </div>
             <div class="m-1">
-                <label for="text">Telefone</label>
-                <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXX-XXXX" required>
-                
-            </div>
+              <label for="text">Telefone (Sem caracteres especiais!)</label>
+              <input type="text" class="form-control" id="telefone" placeholder="(XX) XXXX-XXXX" minlength="11" maxlength="11" required>
+
+              <div id="telefone_branco" class="invalid-feedback">
+                Por favor, preencha esse campo
+              </div>
+              <div id="telefone_invalido" class="invalid-feedback">
+                Por favor, preencha seu telefone de forma valida.
+              </div>
+              <div id="telefone_valido" class="valid-feedback">
+                Parece bom
+              </div>
+              
+          </div>
             <div class="m-1">
                 <label for="exampleSelect">Escolha o curso</label>
                 <select class="form-select" aria-label="Default select example" required>
@@ -240,6 +257,53 @@
       </div>
     </div>
   </footer>
+  <script>
+    var telefone = document.getElementById('telefone');
+    var telefone_branco = document.getElementById('telefone_branco');
+    var telefone_invalido = document.getElementById('telefone_invalido');
+    var telefone_valido = document.getElementById('telefone_valido');
+
+    telefone.addEventListener('input', function() {
+    
+
+        if (telefone.value === '') {
+            telefone_branco.style.display = 'block';
+            telefone_invalido.style.display = 'none';
+            telefone_valido.style.display = 'none';
+        } else if (telefone.value.length !== 11) {
+            telefone_branco.style.display = 'none';
+            telefone_invalido.style.display = 'block';
+            telefone_valido.style.display = 'none';
+        } else {
+            telefone_branco.style.display = 'none';
+            telefone_invalido.style.display = 'none';
+            telefone_valido.style.display = 'block';
+        }
+    });
+    var nome = document.getElementById('nome');
+    var nome_invalido = document.getElementById('nome_invalido');
+    var nome_valido = document.getElementById('nome_valido');
+
+    var nomeexpressao = /^[a-zA-Z\s]+$/; // só aceita letras e espaços :D
+
+    nome.addEventListener('input', function() {
+        if (nome.value === '') {
+            nome_invalido.style.display = 'none';
+            nome_valido.style.display = 'none';
+        } else if (!nomeexpressao.test(nome.value)) { //se o campo digitado tiver @ - .com ele aparece a mensagem invalidado, logo quando usuario digita o normal vai usar esse test para ver se corresponde a expressão e esse ! é quando o input ser diferente da expressão chamar ele
+            nome_invalido.style.display = 'block';
+            nome_valido.style.display = 'none';
+        } else {
+            nome_invalido.style.display = 'none';
+            nome_valido.style.display = 'block';
+        }
+    });
+
+
+
+
+
+  </script>
   <script src="form.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
