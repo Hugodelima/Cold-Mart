@@ -263,6 +263,9 @@
     var telefone_invalido = document.getElementById('telefone_invalido');
     var telefone_valido = document.getElementById('telefone_valido');
 
+    var telefoneexpressao = /^\d+$/; // só aceita numeros:D
+    
+
     telefone.addEventListener('input', function() {
     
 
@@ -270,7 +273,7 @@
             telefone_branco.style.display = 'block';
             telefone_invalido.style.display = 'none';
             telefone_valido.style.display = 'none';
-        } else if (telefone.value.length !== 11) {
+        } else if (telefone.value.length !== 11 || !telefoneexpressao.test(telefone.value)) {
             telefone_branco.style.display = 'none';
             telefone_invalido.style.display = 'block';
             telefone_valido.style.display = 'none';
